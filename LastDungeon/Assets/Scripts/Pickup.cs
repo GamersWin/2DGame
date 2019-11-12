@@ -18,6 +18,7 @@ public class Pickup : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            Destroy(this.gameObject);
             for(int i = 0; i < inventory.slots.Length; i++)
             {
                 if(inventory.isFull[i] == false)
